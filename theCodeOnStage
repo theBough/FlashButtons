@@ -1,0 +1,7 @@
+stop();
+
+now.addEventListener(MouseEvent.CLICK, myFunction);
+
+function myFunction(event:MouseEvent){
+	gotoAndPlay(1,"Scene 2");
+}
