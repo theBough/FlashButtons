@@ -1,0 +1,29 @@
+stop();
+var blue:Boolean;
+var green:Boolean;
+
+blue = false;
+green = false;
+
+one.addEventListener(MouseEvent.CLICK, myFunction);
+two.addEventListener(MouseEvent.CLICK, myFunction2);
+three.addEventListener(MouseEvent.CLICK, myFunction3);
+
+function myFunction3(event:MouseEvent){
+	if(blue && green){
+		gotoAndPlay(1,"Scene 4");
+	}else if(green){
+		gotoAndPlay(1,"Scene 3");
+	}else if(blue){
+		gotoAndPlay(1,"Scene 2");
+	}
+}
+
+function myFunction(event:MouseEvent){
+	blue = true;
+	
+}
+function myFunction2(event:MouseEvent){
+	green = true;
+	
+}
